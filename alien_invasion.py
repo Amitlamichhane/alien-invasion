@@ -58,13 +58,15 @@ class AlienInvasion:
 
     def _check_keyup_events(self,event):
         # respond to keyreleases 
+        
         if event.key == pygame.K_RIGHT:
             self.ship.moving_right = False
         if event.key == pygame.K_LEFT:
             self.ship.moving_left = False
-        if event.key == pygame.K_DOWN:
-            self.ship.moving_up = False
         if event.key == pygame.K_UP:
+            self.ship.moving_up = False
+        if event.key == pygame.K_DOWN:
+            
             self.ship.moving_down = False
         
     
