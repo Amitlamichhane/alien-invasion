@@ -45,4 +45,6 @@ class Ship:
     def center_ship(self):
         """Center the ship on the screen."""
         self.rect.midbottom = self.screen_rect.midbottom
+        #updating  x and y axis 
         self.x = float(self.rect.x)
+        self.y = float(self.rect.y)
