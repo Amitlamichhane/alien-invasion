@@ -37,7 +37,12 @@ class Ship:
         #ypdate rect obect from self.x 
         self.rect.x = self.x
         self.rect.y = self.y
+    
     def blitme(self):
         "draw the ship at its current location "
-
         self.screen.blit(self.image,self.rect)
+
+    def center_ship(self):
+        """Center the ship on the screen."""
+        self.rect.midbottom = self.screen_rect.midbottom
+        self.x = float(self.rect.x)
